@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const CategorySummary = ({ transactions }) => {
   // Calcola i totali per categoria
@@ -40,7 +40,7 @@ const CategorySummary = ({ transactions }) => {
     return { summary, processedData };
   };
 
-  const { summary, processedData } = calculateCategorySummary();
+  const { processedData } = calculateCategorySummary();
 
   const formatCurrency = (value) => {
     return new Intl.NumberFormat('it-IT', {

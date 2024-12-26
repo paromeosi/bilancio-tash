@@ -7,7 +7,6 @@ import {
   getDocs,
   query,
   where,
-  orderBy,
   serverTimestamp
 } from 'firebase/firestore';
 import { db } from '../config/firebase';
@@ -77,5 +76,8 @@ class TransactionService {
     }
   }
 }
+
+const transactionService = new TransactionService();
+export default transactionService;
 
 export default new TransactionService();
