@@ -80,4 +80,5 @@ class TransactionService {
 const transactionService = new TransactionService();
 export default transactionService;
 
-export default new TransactionService();
+const transactionService = new TransactionService();
+export default transactionService;
